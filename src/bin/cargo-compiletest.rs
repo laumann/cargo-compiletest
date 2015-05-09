@@ -105,16 +105,17 @@ fn handle_args() -> Option<(Config, Vec<Mode>)> {
 }
 
 fn main() {
+    let (config, mut modes) = match handle_args() {
+        Some(opts) => opts,
+        None => return
+    };
+
     let tests_folder = Path::new("tests");
     if !tests_folder.is_dir() {
         println!("error: No 'tests' folder were found");
         usage(&options(), 1);
     }
 
-    let (config, mut modes) = match handle_args() {
-        Some(opts) => opts,
-        None => return
-    };
 
     let modes_specified = !modes.is_empty();
     if !modes_specified {
