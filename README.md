@@ -6,13 +6,13 @@ subcommand.
 
 Installation
 ------------
-```
+```sh
 cargo build --release
 export PATH=$PATH:`pwd`/target/release
 ```
 
 Go to your project that uses the [`compiletest_rs`][compiletest] testing harness and type:
-```
+```sh
 cargo compiletest
 ```
 to run your compiletest suite.
