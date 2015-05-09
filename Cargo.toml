@@ -1,0 +1,8 @@
+[package]
+name = "cargo-compiletest"
+version = "0.1.0"
+authors = ["Thomas Jespersen <laumann.thomas@gmail.com>"]
+
+[dependencies]
+compiletest_rs = "*"
+getopts = "*"
