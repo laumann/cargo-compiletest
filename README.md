@@ -11,7 +11,7 @@ cargo build --release
 export PATH=$PATH:`pwd`/target/release
 ```
 
-Go to your project that uses the `[compiletest_rs][compiletest]` testing harness and type:
+Go to your project that uses the [`compiletest_rs`][compiletest] testing harness and type:
 ```
 cargo compiletest
 ```
