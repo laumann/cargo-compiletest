@@ -1,8 +1,7 @@
 cargo-compiletest
 =================
 
-This crate provides a way to use the `compiletest` utility as a Cargo
-subcommand.
+This crate provides a way to use the `compiletest` utility as a [Cargo subcommand][cargosubcmd].
 
 Installation
 ------------
@@ -23,4 +22,5 @@ For instructions on how to set up and use compiletest, see
 [laumann/compiletest-rs][compiletest].
 
 
+[cargosubcmd]: https://github.com/rust-lang/cargo/wiki/Third-party-cargo-subcommands
 [compiletest]: https://github.com/laumann/compiletest-rs
